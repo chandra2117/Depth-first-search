@@ -1,6 +1,6 @@
 <h1>ExpNo 2 : Implement Depth First Search Traversal of a Graph</h1> 
-<h3>Name: Rakshitha P </h3>
-<h3>Register Number: 212223220083    </h3>
+<h3>Name: CHANDRAPRIYADHARSHINI C </h3>
+<h3>Register Number: 212223240019    </h3>
 <H3>Aim:</H3>
 <p> To Implement Depth First Search Traversal of a Graph using Python 3.</p>
 <h3>Theory:</h3>
@@ -56,7 +56,8 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
 
 ## Program:
 
-```python
+```
+#taking input nodes as numbers
 from collections import deque
 from collections import defaultdict
 
@@ -82,6 +83,33 @@ path = []
 traversedpath = dfs(graph, start, visited, path)
 print(traversedpath)
 ```
+```
+#taking input nodes as numbers
+from collections import deque
+from collections import defaultdict
+
+def dfs(graph, start, visited, path):
+    path.append(start)
+    visited[start] = True
+    for neighbour in graph[start]:
+        if visited[neighbour] == False:
+            dfs(graph, neighbour, visited, path)
+            visited[neighbour] = True
+    return path
+
+graph = defaultdict(list)
+n, e = map(int, input().split())
+for i in range(e):
+    u, v = map(str, input().split())
+    graph[u].append(v)
+    graph[v].append(u)
+# print(graph)
+start = "0"
+visited = defaultdict(bool)
+path = []
+traversedpath = dfs(graph, start, visited, path)
+print(traversedpath)
+```
 
 <h3>Sample Input</h3>
 
@@ -98,8 +126,8 @@ F H <BR>
 
 <h3>Sample Output</h3>
 
+<img width="733" height="248" alt="Screenshot 2025-09-11 141031" src="https://github.com/user-attachments/assets/5c606249-f0b9-40c7-8b0f-657eb0a58de8" />
 
-<img width="867" height="497" alt="q" src="https://github.com/user-attachments/assets/fec25b9d-b861-40d2-aedb-81840f98c1f6" />
 
 <h3>Sample Input</h3>
 
@@ -112,7 +140,7 @@ F H <BR>
 
 <h3>Sample Output</h3>
 
-<img width="600" height="327" alt="w" src="https://github.com/user-attachments/assets/3c648b13-68ce-4b96-b5a8-6b6adf221e73" />
+<img width="512" height="168" alt="image" src="https://github.com/user-attachments/assets/0a009e79-1d44-48c8-9498-06351f13a1f6" />
 
 
 <h3>Result:</h3>
