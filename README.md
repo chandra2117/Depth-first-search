@@ -57,7 +57,7 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
 ## Program:
 
 ```
-#taking input nodes as numbers
+#taking input nodes as alphabets
 from collections import deque
 from collections import defaultdict
 
