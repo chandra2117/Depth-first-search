@@ -111,7 +111,7 @@ traversedpath = dfs(graph, start, visited, path)
 print(traversedpath)
 ```
 
-<h3>Sample Input</h3>
+<h3>Input</h3>
 
 8 9 <BR>
 A B <BR>
@@ -124,12 +124,12 @@ D F <BR>
 G F <BR>
 F H <BR>
 
-<h3>Sample Output</h3>
+<h3>Output</h3>
 
 <img width="733" height="248" alt="Screenshot 2025-09-11 141031" src="https://github.com/user-attachments/assets/5c606249-f0b9-40c7-8b0f-657eb0a58de8" />
 
 
-<h3>Sample Input</h3>
+<h3>Input</h3>
 
 5 5 <BR>
 0 1 <BR>
@@ -138,7 +138,7 @@ F H <BR>
 2 3 <BR>
 2 4 <BR>
 
-<h3>Sample Output</h3>
+<h3>Output</h3>
 
 <img width="512" height="168" alt="image" src="https://github.com/user-attachments/assets/0a009e79-1d44-48c8-9498-06351f13a1f6" />
 
